@@ -1,0 +1,65 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    height: 806px;
+    background: black;
+    clip-path: polygon(0 0, 100% 0, 100% 768px, 53.25% 768px, 50% 806px, 46.75% 768px, 0 768px);
+}
+
+.main {
+    height: 1038px;
+    clip-path: polygon(0 0, 46.75% 0, 50% 38px, 53.25% 0, 100% 0, 100% 1000px, 53.25% 1000px, 50% 1038px, 46.75% 1000px, 0 1000px);
+    margin-top: -39px;
+    padding-right: 1px;
+}
+
+.hidden {
+    opacity: 0;
+}
+.visible {
+    opacity: 1;
+}
+
+.main1 {
+    background-color: #F17C72;
+} 
+
+.main2 {
+    background-color: #32AC97;
+} 
+
+.main3 {
+    background-color: #7F4C76;
+} 
+
+.main4 {
+    background-color: #3F9FC9;
+    clip-path: polygon(0 0, 46.75% 0, 50% 38px, 53.25% 0, 100% 0, 100% 1000px, 0 1000px);
+} 
+
+footer {
+    height: 97px;
+    background-color: #334960;
+    margin-top: -39px;
+}
+
