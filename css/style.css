@@ -1,5 +1,5 @@
 *, *:after, *:before {
-    box-sizing: border-box;
+   
     padding: 0;
     margin: 0;
     transition: .5s ease-in-out;
@@ -22,8 +22,10 @@ body {
 
 header {
     height: 806px;
-    background: black;
-    clip-path: polygon(0 0, 100% 0, 100% 768px, 53.25% 768px, 50% 806px, 46.75% 768px, 0 768px);
+    background: url("../img/header.png") no-repeat 100% 100%;
+    background-color: black;
+    background-size: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 95.285%, 53.25% 95.285%, 50% 100%, 46.75% 95.285%, 0 95.285%);
 }
 
 .main {
