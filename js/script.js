@@ -8,6 +8,6 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(".scrol").addClass("hidden").viewportChecker({
         classToAdd: "visible fadeIn animated",
-        offset: 30
+        offset: 25
     });
 });
