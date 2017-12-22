@@ -1,3 +1,13 @@
+@font-face {
+    font-family: KaushanScript;
+    src: url(../font/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: Signika;
+    src: url(../font/Signika-Regular.ttf);
+}
+
 *, *:after, *:before {
    
     padding: 0;
@@ -12,6 +22,7 @@ ul {
 a {
     text-decoration: none;
     outline: none;
+    color: white;
 }
 
 body {
@@ -26,6 +37,50 @@ header {
     clip-path: polygon(0 0, 100% 0, 100% 95.285%, 53.25% 95.285%, 50% 100%, 46.75% 95.285%, 0 95.285%);
     background: url("../img/header.png") center center no-repeat;
     background-color: gray;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 18%;
+    margin-top: 28px;
+    margin-right: 30%;
+    color: lightgray;
+    font-family: KaushanScript;
+    font-size: 36px;
+}
+
+.menu {
+    margin-right: 18%;
+}
+
+.menu ul {
+    width: 450px;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 45px 15px 10px 15px;
+    font-family: Signika;
+    font-size: 18px;
+    margin-right: -4px;
+}
+
+.active {
+    background-color: #3F9FC9;
+}
+
+.menu ul li:hover {
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.menu ul li a:hover {
+    color: #000;
 }
 
 .main {
