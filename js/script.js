@@ -14,4 +14,5 @@ $(document).ready(function() {
 
 $('.drop').click(function() {
     $('.menu').fadeToggle();
+    $('.drop').toggleClass('gum');
 });
