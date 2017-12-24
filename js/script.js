@@ -11,3 +11,7 @@ $(document).ready(function() {
         offset: 15
     });
 });
+
+$('.drop').click(function() {
+    $('.menu').fadeToggle();
+});
