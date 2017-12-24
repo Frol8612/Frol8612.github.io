@@ -207,6 +207,10 @@ footer {
         background-image: none;
         clip-path: none;
         height: 100px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1;
     }
 
     .menu {
