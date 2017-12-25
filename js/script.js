@@ -16,10 +16,10 @@ $(function () {
     $('.drop').click(function () {
         if ($('#menu').css('display') == 'none') {
             $('.drop').addClass('gum');
-            $('#menu').fadeIn(600);
+            $('#menu').fadeIn();
         } else {
             $('.drop').removeClass('gum');
-            $('#menu').fadeOut(600);
+            $('#menu').fadeOut();
         }
     });
     $(window).resize(function () {
