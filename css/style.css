@@ -121,33 +121,6 @@ header .menu a:hover,
     
 }
 
-.drop {
-    display: none;
-    width: 50px;
-    background-color: transparent;
-    outline: none;
-    border:none;
-    position: absolute;
-    top: 34px;
-    right: 10%;
-    cursor: pointer;
-}
-
-.gum {
-    transform: rotate(90deg);
-    transition: 0.3s;
-}
-
-.drop:hover {
-    opacity: 0.5;
-}
-
-.drop::before {
-    content: "\2261";
-    font: 3em "arial";
-    color: #fff;
-}
-
 .main {
     height: 1038px;
     clip-path: polygon(0 0, 46.75% 0, 50% 3.66%, 53.25% 0, 100% 0, 100% 96.34%, 53.25% 96.34%, 50% 100%, 46.75% 96.34%, 0 96.34%);
@@ -219,7 +192,6 @@ footer {
     }
 
     .menu {
-        display: none;
         position: absolute;
         top: 100px;
         right: 0;
@@ -238,8 +210,31 @@ footer {
     }
 
     .drop {
-        display: block;
-    }
+    display: block;
+    width: 50px;
+    background-color: transparent;
+    outline: none;
+    border:none;
+    position: absolute;
+    top: 34px;
+    right: 10%;
+    cursor: pointer;
+}
+
+.gum {
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+.drop:hover {
+    opacity: 0.5;
+}
+
+.drop::before {
+    content: "\2261";
+    font: 3em "arial";
+    color: #fff;
+}
 
     .main {
         clip-path: none;
