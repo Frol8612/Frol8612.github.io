@@ -63,7 +63,7 @@ header {
 
 .menu {
     float: right;
-    width: 650px;
+    width: 600px;
 }
 
 .menu ul li {
@@ -135,6 +135,7 @@ header .menu a:hover,
 
 .gum {
     transform: rotate(90deg);
+    transition: 0.3s;
 }
 
 .drop:hover {

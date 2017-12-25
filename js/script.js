@@ -16,3 +16,12 @@ $('.drop').click(function () {
     $('.menu').fadeToggle();
     $('.drop').toggleClass('gum');
 });
+
+$(function() {
+    $('.menu').hover(function (e) {
+        $('#head').toggleClass('active'); 
+        $('#mn1').toggleClass('active1');
+        $('.mn23').toggleClass('active23');
+        $('#mn4').toggleClass('active4');
+      })
+});
