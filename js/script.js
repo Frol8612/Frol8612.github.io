@@ -14,11 +14,12 @@ $(document).ready(function () {
 
 $(function () {
     $('.drop').click(function () {
-        $('.drop').toggleClass('gum');
         if ($('#menu').css('display') == 'none') {
-            $('#menu').fadeIn();
+            $('.drop').addClass('gum');
+            $('#menu').fadeIn(600);
         } else {
-            $('#menu').fadeOut();
+            $('.drop').removeClass('gum');
+            $('#menu').fadeOut(600);
         }
     });
     $(window).resize(function () {
