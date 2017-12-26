@@ -220,10 +220,6 @@ footer {
         transition: .5s ease-in-out;
     }
 
-    .drop:hover {
-        opacity: 0.5;
-    }
-
     .drop::before {
         content: "\2261";
         font: 3em "arial";

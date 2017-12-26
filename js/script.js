@@ -17,19 +17,10 @@ $(function () {
         if ($('#menu').css('display') == 'none') {
             $('.drop').css('transform','rotate(90deg)');
             $('#menu').fadeIn();
-            return false;
         } else {
             $('.drop').css('transform','rotate(0deg)');
             $('#menu').fadeOut();
         } 
-    });
-
-    $(document).click( function(event) {
-        if( $(event.target).closest('#menu').length) 
-        return;
-        $('.drop').css('transform','rotate(0deg)');
-        $('#menu').fadeOut('');
-        event.stopPropagation();
     });
 
     $(window).resize(function () {
