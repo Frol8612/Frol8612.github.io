@@ -79,6 +79,11 @@ header {
     font-size: 18px;
 }
 
+header .logo,
+header a {
+    color: gray;
+}
+
 header .menu a:hover,
 .active {
     background-color: #3F9FC9;
@@ -176,17 +181,7 @@ footer {
 
 @media (max-width: 875px) {
     header {
-        background-image: none;
         clip-path: none;
-    }
-
-    .navbar {
-        background-color: #334960;
-        width: 100%;
-        height: 100px;
-        position: fixed;
-        top: 0;
-        z-index: 1;
     }
 
     .menu {
@@ -194,9 +189,9 @@ footer {
         position: absolute;
         top: 100px;
         right: 0;
-        width: 30%;
+        width: 25%;
         z-index: 1;
-        background-color: #334960;
+        background-color: transparent;
     }
 
     .menu ul li {
@@ -205,31 +200,48 @@ footer {
     }
 
     .menu a {
-        padding: 30px;
+        padding: 15%;
+    }
+
+    header .menu a:hover {
+        background-color: transparent;
+        border: 1px solid #3F9FC9;
+    }
+
+    .active {
+        background-color: transparent;
     }
 
     .drop {
-    display: block;
-    width: 50px;
-    background-color: transparent;
-    outline: none;
-    border:none;
-    position: absolute;
-    top: 34px;
-    right: 10%;
-    cursor: pointer;
-    transition: .5s ease-in-out;
-}
+        display: block;
+        width: 50px;
+        background-color: transparent;
+        outline: none;
+        border:none;
+        position: absolute;
+        top: 34px;
+        right: 10%;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+    }
 
-.drop:hover {
-    opacity: 0.5;
-}
+    .drop:hover {
+        opacity: 0.5;
+    }
 
-.drop::before {
-    content: "\2261";
-    font: 3em "arial";
-    color: #fff;
-}
+    .drop::before {
+        content: "\2261";
+        font: 3em "arial";
+        color: gray;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
 
     .main {
         clip-path: none;
@@ -239,8 +251,32 @@ footer {
     .main .navbar {
         display: none;
     }
+}
 
-    .active {
+@media (max-width: 425px) {
+    header {
+        background-image: none;
+    }
+
+header .logo,
+header a {
+    color: #fff;
+    }
+
+    .navbar,
+    .menu {
         background-color: #334960;
+    }
+
+    .menu {
+        width: 40%;
+    }
+
+    .menu a {
+        padding: 15%;
+    }
+
+    .drop::before {
+        color: #fff;
     }
 }
