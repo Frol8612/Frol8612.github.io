@@ -59,6 +59,10 @@ header {
     float: left;
 }
 
+.drop {
+    display: none;
+}
+
 .menu {
     float: right;
     width: 600px;
@@ -200,7 +204,7 @@ footer {
 
     header .menu a:hover {
         background-color: transparent;
-        border: 1px solid #3F9FC9;
+        color: lightblue;
     }
 
     .active {
@@ -249,9 +253,9 @@ footer {
         background-image: none;
     }
 
-header .logo,
-header a {
-    color: #fff;
+    header .logo,
+    header a {
+        color: #fff;
     }
 
     .navbar,
