@@ -14,8 +14,13 @@ $(document).ready(function () {
 
 var button = document.getElementById('drop');
 var menuHeader = document.getElementById('menu');
+
+function removeStyle() {
+    menuHeader.removeAttribute('style');
+}
+
 button.onclick = function showMenu() {
-    if (menuHeader.style.display == 'none') {
+    if (menuHeader.style.display == !'block' || menuHeader.style.display == 'none') {
         button.style.cssText = 'transform: rotate(90deg); \
                                 transition: .3s ease-out; \
         ';
@@ -25,24 +30,21 @@ button.onclick = function showMenu() {
         ';
     }  else {
         button.style.transform = 'rotate(0deg)';
+        removeStyle();
+    }
+}
+
+window.onresize = function sizeWindow () {
+    button.style.transform = 'rotate(0deg)';
+    if (window.screen.width >= 875) {
+        removeStyle();
+    } else {
         menuHeader.style.cssText = 'display: none; \
                                     opacity: 0; \
         ';
     }
 }
 
-window.onresize = function sizeWindow () {
-    if (window.screen.width >= 875) {
-        menuHeader.style.cssText = 'display: block; \
-                                    opacity: 1; \
-        ';
-    } else {
-        menuHeader.style.cssText = 'display: none; \
-                                    opacity: 0; \
-        ';
-        button.style.transform = 'rotate(0deg)';
-    }
-}
 
 $(function() {
     $('.menu').hover(function () {
