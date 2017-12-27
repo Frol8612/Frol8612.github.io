@@ -1,17 +1,3 @@
-$(document).ready(function () {
-    $(".mscrol").addClass("hidden").viewportChecker({
-        classToAdd: "visible fadeIn animated",
-        offset: 200
-    });
-});
-
-$(document).ready(function () {
-    $(".scrol").addClass("hidden").viewportChecker({
-        classToAdd: "visible fadeIn animated",
-        offset: 15
-    });
-});
-
 var button = document.getElementById('drop');
 var menuHeader = document.getElementById('menu');
 
@@ -44,13 +30,3 @@ window.onresize = function sizeWindow () {
         ';
     }
 }
-
-
-$(function() {
-    $('.menu').hover(function () {
-        $('#head').toggleClass('active'); 
-        $('#mn1').toggleClass('active1');
-        $('.mn23').toggleClass('active23');
-        $('#mn4').toggleClass('active4');
-    });
-});

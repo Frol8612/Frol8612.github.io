@@ -85,44 +85,21 @@ header {
     font-size: 18px;
 }
 
-header .menu a:hover,
-.active {
+header .menu a:hover {
     background-color: #3F9FC9;
 }
 
-.main1 .menu a:hover,
-.active1 {
+.main1 .menu a:hover {
     background-color: #E6655E;
 }
 
 .main2 .menu a:hover,
-.main3 .menu a:hover,
-.active23 {
+.main3 .menu a:hover {
     background-color: rgba(255, 255, 255, 0.4)
 }
 
-.main4 .menu a:hover,
-.active4 {
+.main4 .menu a:hover {
     background-color: #37637F;
-}
-
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-}
-
-.fadeIn {
-    animation-name: fadeIn;
-}
-
-.animated {
-    animation-duration: 1s;
-    
 }
 
 .main {
