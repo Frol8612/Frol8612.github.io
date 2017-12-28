@@ -164,6 +164,7 @@ footer {
 
     .menu {
         display: none;
+        opacity: 0;
         position: absolute;
         top: 100px;
         right: 0;
@@ -175,6 +176,7 @@ footer {
     .menu ul li {
         display: block;
         width: 100%;
+        text-align: left;
     }
 
     .menu a {
@@ -182,7 +184,7 @@ footer {
     }
 
     header .menu a:hover {
-        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.3);
         color: lightblue;
     }
 

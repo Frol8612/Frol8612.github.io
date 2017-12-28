@@ -5,7 +5,11 @@ function removeStyle() {
     menuHeader.removeAttribute('style');
 }
 
-button.onclick = function showMenu() {
+function buttonRotate() {
+    button.style.transform = 'rotate(0deg)';
+}
+
+function showMenu() {
     if (menuHeader.style.display == !'block' || menuHeader.style.display == 'none') {
         button.style.cssText = 'transform: rotate(90deg); \
                                 transition: .3s ease-out; \
@@ -14,14 +18,15 @@ button.onclick = function showMenu() {
                                     opacity: 1; \
                                     transition: 1s ease-out; \
         ';
-    }  else {
-        button.style.transform = 'rotate(0deg)';
+    } 
+    else {
+        buttonRotate();
         removeStyle();
     }
 }
 
-window.onresize = function sizeWindow () {
-    button.style.transform = 'rotate(0deg)';
+function sizeWindow () {
+    buttonRotate();
     if (window.screen.width >= 875) {
         removeStyle();
     } else {
@@ -30,3 +35,19 @@ window.onresize = function sizeWindow () {
         ';
     }
 }
+
+button.addEventListener('click', showMenu);
+window.addEventListener('resize', sizeWindow);
+
+var clickMenu = false;
+document.addEventListener('click',(e)=>{
+    if (!clickMenu && !menuHeader.contains(e.target) && menuHeader.style.display != 'none') {
+        buttonRotate()
+        removeStyle();
+    }
+    clickMenu = false;
+});
+
+button.addEventListener('click',()=>{
+    clickMenu = true;
+});
