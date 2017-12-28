@@ -23,6 +23,7 @@ function showMenu() {
         buttonRotate();
         removeStyle();
     }
+    clickMenu = true;
 }
 
 function sizeWindow () {
@@ -40,7 +41,8 @@ button.addEventListener('click', showMenu);
 window.addEventListener('resize', sizeWindow);
 
 var clickMenu = false;
-document.addEventListener('click',(e)=>{
+
+document.addEventListener('click', function closeMenu(e) {
     if (!clickMenu && !menuHeader.contains(e.target) && menuHeader.style.display != 'none') {
         buttonRotate()
         removeStyle();
@@ -48,6 +50,4 @@ document.addEventListener('click',(e)=>{
     clickMenu = false;
 });
 
-button.addEventListener('click',()=>{
-    clickMenu = true;
-});
+
