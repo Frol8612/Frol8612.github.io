@@ -330,6 +330,11 @@ footer {
         margin-top: 0;
     }
 
+    .radioB {
+        display: inline-block;
+        left: 22.5%;
+    }
+
     .radioB span {
         font-size: 30px;
     }
@@ -343,7 +348,7 @@ footer {
     }
 
     .header-social {
-        width: 55%;
+        width: 60%;
         left: 22.5%;
     }
 
@@ -402,19 +407,14 @@ footer {
     }
 
     .radioB .rad {
-        margin-top: 40px;
+        margin-top: 50px;
     }
-    
 
     .radioB {
         top: 100px;
-        left: 20%;
-        height: 150px;
     }
 
     .header-social {
-        width: 70%;
-        top: 325px;
-        left: 16%;
+        top: 325px; 
     }
 }
