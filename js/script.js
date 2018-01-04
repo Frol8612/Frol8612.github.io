@@ -7,22 +7,25 @@ function removeStyle() {
 }
 
 function buttonRotate() {
-    button.style.transform = 'rotate(0deg)';
+    button.style.cssText = 'transform: rotate(0deg); \
+                            transition: transform .3s ease-out; \
+    ';
 }
 
 //Открывает и скрывает меню при нажатии на кнопку.
 function showMenu() {
     if (menuHeader.style.display == !'block' || menuHeader.style.display == 'none') {
         button.style.cssText = 'transform: rotate(90deg); \
-                                transition: .3s ease-out; \
+                                transition: transform .3s ease-out; \
         ';
+        button.classList.add('active');
         menuHeader.style.cssText = 'display: block; \
                                     opacity: 1; \
-                                    transition: 1s ease-out; \
         ';
     } 
     else {
         buttonRotate();
+        button.classList.remove('active');
         removeStyle();
     }
     clickMenu = true;
@@ -31,6 +34,7 @@ function showMenu() {
 //При изменении размера экрана скрывает меню.
 function sizeWindow () {
     buttonRotate();
+    button.classList.remove('active');
     if (window.screen.width >= 875) {
         removeStyle();
     } else {
@@ -47,6 +51,7 @@ window.addEventListener('resize', sizeWindow);
 document.addEventListener('click', function closeMenu(e) {
     if (!clickMenu && !menuHeader.contains(e.target) && menuHeader.style.display != 'none') {
         buttonRotate()
+        button.classList.remove('active');
         removeStyle();
     }
     clickMenu = false;
@@ -59,5 +64,10 @@ for (var i = 0; i < radioFlag.length; i++){
         document.getElementById('stext').innerHTML = this.value;
     });
 }
+
+
+
+
+
 
 
