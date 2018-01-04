@@ -317,6 +317,7 @@ footer {
         height: 3px;
         background-color: #fff;
         content: "";
+        transition: transform 0.3s, width 0.3s, top 0.3s;
     }
 
     .drop .drop-line::before {
