@@ -1,5 +1,6 @@
 var button = document.getElementById('drop');
 var menuHeader = document.getElementById('menu');
+var clickMenu = false;
 
 function removeStyle() {
     menuHeader.removeAttribute('style');
@@ -9,6 +10,7 @@ function buttonRotate() {
     button.style.transform = 'rotate(0deg)';
 }
 
+//Открывает и скрывает меню при нажатии на кнопку.
 function showMenu() {
     if (menuHeader.style.display == !'block' || menuHeader.style.display == 'none') {
         button.style.cssText = 'transform: rotate(90deg); \
@@ -26,6 +28,7 @@ function showMenu() {
     clickMenu = true;
 }
 
+//При изменении размера экрана скрывает меню.
 function sizeWindow () {
     buttonRotate();
     if (window.screen.width >= 875) {
@@ -40,8 +43,7 @@ function sizeWindow () {
 button.addEventListener('click', showMenu);
 window.addEventListener('resize', sizeWindow);
 
-var clickMenu = false;
-
+//Закрывает меню при нажатии вне его.
 document.addEventListener('click', function closeMenu(e) {
     if (!clickMenu && !menuHeader.contains(e.target) && menuHeader.style.display != 'none') {
         buttonRotate()
@@ -49,5 +51,13 @@ document.addEventListener('click', function closeMenu(e) {
     }
     clickMenu = false;
 });
+
+// Вывод текса в span при нажатии на radio
+var radioFlag = document.querySelectorAll('.radButton');
+for (var i = 0; i < radioFlag.length; i++){
+    radioFlag[i].addEventListener('click', function(event) {
+        document.getElementById('stext').innerHTML = this.value;
+    });
+}
 
 
