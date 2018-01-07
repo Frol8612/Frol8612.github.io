@@ -272,8 +272,8 @@ footer {
         opacity: 0;
         position: absolute;
         top: 100px;
-        right: 0;
         width: 25%;
+        right: 0;
         z-index: 1;
         background-color: transparent;
     }
@@ -281,11 +281,11 @@ footer {
     .menu ul li {
         display: block;
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
 
     .menu a {
-        padding: 15%;
+        padding: 10%;
     }
 
     header .menu a:hover {
@@ -412,12 +412,18 @@ footer {
 
     .navbar,
     .menu {
-        background-color: rgba(54, 73, 96, 0.5);
+        background-color: rgba(54, 73, 96, 0.8);
     }
 
     .menu {
-        width: 30%;
+        width: 100%;
         top: 60px;
+        border-top: 1px solid rgba(54, 73, 96, 1);
+        border-bottom: 1px solid rgba(54, 73, 96, 1);
+    }
+
+    .menu a {
+        padding: 2%;
     }
 
     .drop {
