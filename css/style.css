@@ -127,20 +127,25 @@ header .menu a:hover {
 
 .radioB {
     position: absolute;
-    top: 227px;
+    top: 345px;
+    height: 100px;
     width: 100%;
     text-align: center;
-    height: 200px;
-    color: #fff;
 }
 
-.radioB span {
+.spantext {
+    display: block;
+    position: absolute;
+    top: 225px;
+    width: 100%;
     font-family: Signika;
     font-size: 60px;
+    color: #fff;
+    text-align: center;
 }
 
 .radioB .rad {
-    margin-top: 95px;
+    margin-top: 45px;
 }
 
 .radButton {
@@ -228,8 +233,8 @@ footer {
         margin-top: -39px;
     }
 
-    .radioB span {
-        font-size: 40px;
+    .spantext {
+        font-size: 45px;
     }
 
     .rad label {
@@ -356,7 +361,7 @@ footer {
         margin-top: 0;
     }
 
-    .radioB span {
+    .spantext {
         font-size: 35px;
     }
 
@@ -371,7 +376,7 @@ footer {
 
     .header-social {
         width: 60%;
-        left: 22.5%;
+        left: 20%;
     }
 
     .header-social ul li {
@@ -420,15 +425,12 @@ footer {
     }
 
     .radioB {
-        top: 130px;
+        top: 200px;
     }
 
-    .radioB span {
+    .spantext {
         font-size: 25px;
-    }
-
-    .radioB .rad {
-        margin-top: 50px;
+        top: 150px;
     }
 
     .header-social {
