@@ -272,20 +272,19 @@ footer {
         opacity: 0;
         position: absolute;
         top: 100px;
-        width: 25%;
+        width: 100%; 
         right: 0;
         z-index: 1;
         background-color: transparent;
     }
 
-    .menu ul li {
-        display: block;
-        width: 100%;
-        text-align: center;
+    .menu ul li:first-child {
+        margin-left: 20%;
+        
     }
 
     .menu a {
-        padding: 10%;
+        padding: 15%;
     }
 
     header .menu a:hover {
@@ -422,8 +421,17 @@ footer {
         border-bottom: 1px solid rgba(54, 73, 96, 1);
     }
 
+    .menu ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .menu ul li:first-child {
+        margin-left: 0;   
+    }
+
     .menu a {
-        padding: 2%;
+        padding: 5%;
     }
 
     .drop {
