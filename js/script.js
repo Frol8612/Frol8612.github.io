@@ -60,10 +60,12 @@ document.addEventListener('click', function closeMenu(e) {
 // Вывод текса в span при нажатии на radio
 var radioFlag = document.querySelectorAll('.radButton');
 for (var i = 0; i < radioFlag.length; i++){
-    radioFlag[i].addEventListener('click', function(event) {
+    radioFlag[i].addEventListener('click', function() {
         document.getElementById('stext').innerHTML = this.value;
     });
 }
+
+
 
 
 

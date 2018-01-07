@@ -35,7 +35,7 @@ body {
 
 header {
     position: relative;
-    height: 807px;
+    height: 805px;
     clip-path: polygon(0 0, 100% 0, 100% 95.285%, 53.25% 95.285%, 50% 100%, 46.75% 95.285%, 0 95.285%);
     background: url("../img/header.png") center center no-repeat;
     background-color: #334960;
@@ -268,7 +268,7 @@ footer {
         position: absolute;
         top: 100px;
         right: 0;
-        width: 20%;
+        width: 25%;
         z-index: 1;
         background-color: transparent;
     }
