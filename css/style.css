@@ -31,6 +31,8 @@ body {
     height: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -84,46 +86,6 @@ header {
     font-family: Signika;
     font-size: 18px;
 }
-
-header .menu a:hover {
-    background-color: #3F9FC9;
-}
-
-.main1 .menu a:hover {
-    background-color: #E6655E;
-}
-
-.main2 .menu a:hover,
-.main3 .menu a:hover {
-    background-color: rgba(255, 255, 255, 0.4)
-}
-
-.main4 .menu a:hover {
-    background-color: #37637F;
-}
-
-.main {
-    height: 1038px;
-    clip-path: polygon(0 0, 46.75% 0, 50% 3.66%, 53.25% 0, 100% 0, 100% 96.34%, 53.25% 96.34%, 50% 100%, 46.75% 96.34%, 0 96.34%);
-    margin-top: -39px;
-}
-
-.main1 {
-    background-color: #F17C72;
-} 
-
-.main2 {
-    background-color: #32AC97;
-} 
-
-.main3 {
-    background-color: #7F4C76;
-} 
-
-.main4 {
-    background-color: #3F9FC9;
-    clip-path: polygon(0 0, 46.75% 0, 50% 3.66%, 53.25% 0, 100% 0, 100% 96.34%, 0 96.34%);
-} 
 
 .radioB {
     position: absolute;
@@ -212,6 +174,146 @@ header .menu a:hover {
     color: #334960;
 }
 
+header .menu a:hover {
+    background-color: #3F9FC9;
+}
+
+.main1 .menu a:hover {
+    background-color: #E6655E;
+}
+
+.main2 .menu a:hover,
+.main3 .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.main4 .menu a:hover {
+    background-color: #37637F;
+}
+
+.main {
+    height: 1038px;
+    clip-path: polygon(0 0, 46.75% 0, 50% 3.66%, 53.25% 0, 100% 0, 100% 96.34%, 53.25% 96.34%, 50% 100%, 46.75% 96.34%, 0 96.34%);
+    margin-top: -39px;
+}
+
+.main1 {
+    background-color: #F17C72;
+    text-align: center;
+} 
+
+.main1 h2 {
+    margin-top: 160px;
+    font-size: 48px;
+    font-family: Signika;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.main1 h2 .h1-color {
+    background-color: #32AC97;
+}
+
+.main1 h2 .h2-color {
+    background-color: #7F4C76;
+}
+.ptext {
+    margin-top: 25px;
+    font-size: 19px;
+}
+
+.ptext a {
+    color: #FD2614;
+}
+
+.about-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 115px;    
+}
+
+.main1-social {
+    height: 76px;
+    border-top: 2px solid #2AAE96;
+}
+
+.main1-social ul li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 4px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.main1-social ul li:last-child {
+    margin-right: 0;
+}
+
+.main1-social li:hover {
+    background-color: #fff;
+    border-color: #E6655E;
+}
+
+.main1-social a:hover {
+    color: #E6655E;
+}
+
+.main1-social a {
+    display: block;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.abouts {
+    width: 215px;
+    height: 330px;
+    margin-right: 20px;
+    background-color: #E6655E;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.abouts:hover .main1-social,
+.abouts:hover {
+    border: none;
+    background-color: #F17C72;
+}
+
+.abouts img {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin-top: 23px;
+}
+
+.abouts:last-child {
+    margin-right: 0;
+}
+
+.abouts h3 {
+    margin-top: 17px;
+    margin-bottom: 3px;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.abouts p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.main2 {
+    background-color: #32AC97;
+} 
+
+.main3 {
+    background-color: #7F4C76;
+} 
+
+.main4 {
+    background-color: #3F9FC9;
+    clip-path: polygon(0 0, 46.75% 0, 50% 3.66%, 53.25% 0, 100% 0, 100% 96.34%, 0 96.34%);
+} 
 
 footer {
     height: 97px;
@@ -231,6 +333,7 @@ footer {
 
     .main1 {
         margin-top: -39px;
+        height: 700px;
     }
 
     .spantext {
@@ -255,6 +358,54 @@ footer {
     .header-social a {
         font-size: 20px;
         padding-top: 13px;
+    }
+
+    .main1 h2 {
+        margin-top: 60px;
+        font-size: 43px;
+    }
+
+    .ptext {
+        font-size: 16px;
+    }
+
+    .abouts {
+        width: 165px;
+        height: 280px;
+    }
+
+    .abouts img {
+        margin-top: 15px;
+        width: 80%;
+    }
+
+    .abouts h3 {
+        margin-top: 15px;
+        font-size: 17px;
+    }
+
+    .abouts p {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .main1-social ul li {
+        width: 28px;
+        height: 28px;
+        margin-top: 15px;
+    }
+
+    .main1-social a {
+        margin-top: 4px;
+    }
+
+    .about-social {
+        margin-top: 50px;    
+    }
+
+    .main1-social {
+        height: 56px;
+        border-top: none;
     }
 
     footer {
@@ -340,11 +491,11 @@ footer {
     }
 
     .drop.active .drop-line::before {
-        transform: translateX(13px) translateY(-3px) rotate(45deg);
+        transform: translateX(12.5px) translateY(-3.5px) rotate(45deg);
     }
 
     .drop.active .drop-line::after {
-        transform: translateX(13px) translateY(3px) rotate(-45deg);
+        transform: translateX(12.5px) translateY(3.5px) rotate(-45deg);
     }
 
     .navbar {
@@ -357,7 +508,10 @@ footer {
 
     .main {
         clip-path: none;
-        margin-top: 0;
+    }
+
+    .main1 {
+        height: 750px;
     }
 
     .spantext {
@@ -372,6 +526,67 @@ footer {
         display: none;
     }
 
+    .main1 h2 {
+        margin-top: 39px;
+        padding-top: 70px;
+        font-size: 35px;
+    }
+    
+    .ptext {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .main1-social {
+        height: 36px;
+    }
+    
+    .main1-social ul li {
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+        border: none;
+    }
+    
+    .main1-social a {
+        margin-top: 1px;
+        font-size: 13px;
+    }
+
+    .about-social {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .abouts {
+        width: 180px;
+        height: 230px;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    
+    .abouts img {
+        width: 70%;
+        margin-top: 10px;
+    }
+    
+    
+    .abouts h3 {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    
+    .abouts p {
+        font-size: 10px;
+    }
 
     .header-social {
         width: 60%;
