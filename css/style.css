@@ -549,7 +549,7 @@ footer {
     }
     
     .main1-social a {
-        margin-top: 1px;
+        margin-top: 2px;
         font-size: 13px;
     }
 
@@ -666,5 +666,44 @@ footer {
         width: 100%;
         top: 325px; 
         left: 0;
+    }
+
+    .main1 {
+        height: 680px;
+    }
+
+    .main1 h2 {
+        font-size: 31px;
+    }
+    
+    .ptext {
+        font-size: 11px;
+    }
+
+    .main1-social {
+        height: 26px;
+    }
+    
+    .main1-social ul li {
+        margin-top: 5px;
+    }
+
+    .about-social {
+        margin-top: 10px;
+        width: 300px;
+    }
+    
+    .abouts {
+        width: 130px;
+        height: 180px;
+        margin-top: 15px;
+    }    
+    
+    .abouts h3 {
+        font-size: 14px;
+    }
+    
+    .abouts p {
+        font-size: 9px;
     }
 }
