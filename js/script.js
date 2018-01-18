@@ -64,7 +64,3 @@ for (var i = 0; i < radioFlag.length; i++){
         document.getElementById('stext').innerHTML = this.value;
     });
 }
-
-
-
-
