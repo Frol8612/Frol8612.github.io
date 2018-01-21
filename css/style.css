@@ -45,22 +45,18 @@ header {
 
 .navbar {
     width: 100%;
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
 }
 
 .logo {
     width: 110px;
-    margin-left: 10%;
-    margin-top: 28px;
     color: #fff;
+    margin-top: 20px;
+    margin-left: 10%;
     font-family: KaushanScript;
     font-size: 36px;
-    float: left;
 }
 
 .drop {
@@ -68,14 +64,12 @@ header {
 }
 
 .menu {
-    float: right;
     width: 600px;
 }
 
 .menu ul li {
     display: inline-block;
     width: 15%;
-    text-align: center;
     cursor: pointer;
     margin-right: -4px;
 }
@@ -398,6 +392,14 @@ footer {
 @media (max-width: 1400px) {
     header {
         clip-path: polygon(0 0, 100% 0, 100% 95.285%, 0 95.285%);
+    }
+    
+    .navbar {
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: 5%;
     }
 
     .main {
