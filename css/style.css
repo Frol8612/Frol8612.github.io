@@ -72,6 +72,7 @@ header {
     width: 15%;
     cursor: pointer;
     margin-right: -4px;
+    text-align: center;
 }
 
 .menu a {
@@ -333,9 +334,8 @@ header .menu a:hover {
 }
 
 .block:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-color: #46DCC7;
-    color: #46DCC7;
+    background-color: transparent;
+    border-color: #334960;
 }
 
 .block:last-child {
@@ -712,7 +712,7 @@ footer {
     }
 
     .main2 h2 {
-        padding-top: 30px;
+        padding-top: 50px;
         margin-top: -1px;
         margin-bottom: 30px;
         font-size: 35px;
@@ -722,6 +722,7 @@ footer {
         width: 100%;
         margin-left: 0;
         margin-bottom: 20px;
+        font-size: 13px;
     }
     
     .block {
