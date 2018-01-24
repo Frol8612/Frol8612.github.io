@@ -43,6 +43,13 @@ header {
     background-color: #334960;
 }
 
+h2 {
+    font-size: 48px;
+    font-family: Signika;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
 .navbar {
     width: 100%;
     display: flex;
@@ -199,10 +206,6 @@ header .menu a:hover {
 
 .main1 h2 {
     margin-top: 160px;
-    font-size: 48px;
-    font-family: Signika;
-    font-weight: 300;
-    letter-spacing: 1px;
 }
 
 .main1 h2 .h1-color {
@@ -303,8 +306,6 @@ header .menu a:hover {
 } 
 
 .main2 h2 {
-    font-size: 48px;
-    font-family: Signica;
     margin-top: 140px;
     margin-bottom: 35px;
 }
@@ -376,7 +377,50 @@ header .menu a:hover {
 
 .main3 {
     background-color: #7F4C76;
+    text-align: center;
 } 
+
+.main3 h2 {
+    margin-top: 90px;
+}
+
+.logo-block {
+    display: flex;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 110px;
+    letter-spacing: 1px;
+}
+
+.item h3 {
+    margin-top: 15px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.item p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.item a {
+    color: #B288AB;
+    font-size: 13px;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}
 
 .main4 {
     background-color: #3F9FC9;
@@ -436,8 +480,7 @@ footer {
         padding-top: 13px;
     }
 
-    .main1 h2,
-    .main2 h2 {
+    .main h2 {
         margin-top: 60px;
         font-size: 43px;
     }
@@ -517,6 +560,31 @@ footer {
         width: 150px;
         margin-top: 30px;
         margin-left: 10px;
+    }
+    
+    .logo-block {
+        margin-top: 50px;
+        width: 800px;
+    }
+    
+    .item {
+        width: 180px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .item img {
+        width: 100%;
+    }
+    
+    .item h3 {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .item p {
+        font-size: 10px;
     }
 
     footer {
@@ -711,7 +779,8 @@ footer {
         padding-top: 10px;
     }
 
-    .main2 h2 {
+    .main2 h2,
+    .main3 h2 {
         padding-top: 50px;
         margin-top: -1px;
         margin-bottom: 30px;
@@ -751,6 +820,32 @@ footer {
         height: 75px;
         margin-top: 20px;
         margin-left: 0;
+    }
+
+    .logo-block {
+        margin-top: 20px;
+        width: 400px;
+    }
+    
+    .item {
+        width: 160px;
+        height: 150px;
+        margin-bottom: 5px;
+    }
+    
+    .item h3 {
+        margin-top: 3px;
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+    
+    .item p {
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+
+    .item a {
+        font-size: 9px;
     }
 }
 
@@ -821,9 +916,8 @@ footer {
         height: 660px;
     }
 
-    .main1 h2,
-    .main2 h2 {
-        font-size: 31px;
+    .main h2 {
+        font-size: 28px;
     }
     
     .ptext,
@@ -874,5 +968,30 @@ footer {
     .container-icon .block p {
         width: 100%;
         margin-top: 10px;
+    }
+
+    .logo-block {
+        width: 200px;
+    }
+    
+    .item {
+        width: 95px;
+        height: 130px;
+        margin-bottom: 5px;
+    }
+    
+    .item h3 {
+        margin-top: 3px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    
+    .item p {
+        font-size: 9px;
+        margin-bottom: 1px;
+    }
+
+    .item a {
+        font-size: 8px;
     }
 }
