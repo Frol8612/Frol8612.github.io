@@ -57,13 +57,45 @@ document.addEventListener('click', function closeMenu(e) {
     clickMenu = false;
 });
 
-// Вывод текса в span при нажатии на radio
+// Вывод текса в span при нажатии на radio и автоматически
 var radioFlag = document.querySelectorAll('.radButton');
-for (var i = 0; i < radioFlag.length; i++){
-    radioFlag[i].addEventListener('click', function() {
-        document.getElementById('stext').innerHTML = this.value;
-    });
+var spanT = document.getElementById('stext');
+showRad();
+function showRad() {
+    setTimeout(function() {
+        if(radioFlag[0].checked == true) {
+            radioFlag[0].checked = false;
+            radioFlag[1].checked = true;
+            spanT.innerHTML = radioFlag[1].value;
+        } else if(radioFlag[1].checked == true) {
+            radioFlag[1].checked = false;
+            radioFlag[2].checked = true;
+            spanT.innerHTML = radioFlag[2].value;
+        }  else if(radioFlag[2].checked == true) {
+            radioFlag[2].checked = false;
+            radioFlag[3].checked = true;
+            spanT.innerHTML = radioFlag[3].value;
+        } else {
+            radioFlag[3].checked = false;
+            radioFlag[0].checked = true;
+            spanT.innerHTML = radioFlag[0].value;
+        }
+        showRad();
+    }, 3000);
+    for (var i = 0; i < radioFlag.length; i++){
+        radioFlag[i].addEventListener('click', function() {
+            spanT.innerHTML = this.value;
+        });
+    }
 }
+
+
+
+
+
+ 
+
+
 
 
 
