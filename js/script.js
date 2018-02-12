@@ -36,13 +36,11 @@ function addNum (e) {
 }
 
 function numPop() { 
-    if (sp.innerHTML == 1) {
+    sp.innerHTML--;
+    if (sp.innerHTML == 0) {
         alert('Попытки использованны!!!');
         location.reload();
         alert('Сгенерированно новое число!!!');
-    } else {
-        sp.innerHTML--;
-        console.log(sp.innerHTML);
     }
 }
 
