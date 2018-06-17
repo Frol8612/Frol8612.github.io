@@ -1,17 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/style.css">
     <title>Document</title>
 </head>
-<body>
-    <p>Введите число от 0 до 10, и нажмите на Enter</p>
-    <p>Осталось <span id="sp"></span> попытки!</p>
-    <input type="text" id="t1" autofocus>
 
-    <script src="js/script.js"></script>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-header">
+                <img src="app/images/logo.png" alt="logo">
+            </div>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu-nav">
+                    <li>
+                        <a href="#rule">Об игре</a>
+                    </li>
+                    <li>
+                        <a href="#screen">Скриншоты</a>
+                    </li>
+                    <li>
+                        <a href="#play">Играть</a>
+                    </li>
+                    <li>
+                        <a href="#dev">Разработчик</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="main-head">
+                <h2>&ldquo;Битва за Просвещение&bdquo;</h2>
+            </div>
+            <div class="main-rules" id="rule">
+                <h3>Об игре</h3>
+                <div class="rules-container">
+                    <div class="rule-item item1">
+                        <div class="rule-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h4>Экран</h4>
+                        <p>Для более комфортной игры рекомендуется использовать разрешение экрана 1366х768.</p>
+                    </div>
+                    <div class="rule-item item2">
+                        <div class="rule-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h4>Начало игры</h4>
+                        <p>Для начала игры введите имя и нажмите начать дуэль.</p>
+                    </div>
+                    <div class="rule-item item" 3>
+                        <div class="rule-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h4>Задания</h4>
+                        <p>Нажмите бой и выберите задание (3 наносят урон и одно восстанавливает здоровье).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-screenshot" id="screen">
+                <h3>Скриншоты</h3>
+                <div class="img-container">
+                    <img src="app//images/screenshot1.png" alt="">
+                    <img src="app/images/screenshot2.png" alt="">
+                    <img src="app/images/screenshot3.png" alt="">
+                    <img src="app/images/screenshot4.png" alt="">
+                </div>
+            </div>
+            <div class="main-play" id="play">
+                <h3>Играть</h3>
+                <a href="game.html">Play</a>
+            </div>
+            <div class="main-developer" id="dev">
+                <h3>Разработчик</h3>
+                <img src="app/images/i.png" alt="">
+                <p>Фролов Павел</p>
+                <div class="social">
+                    <a href="https://github.com/Frol8612" target="_blank"><i class="fab fa-github"></i></a>
+                    <div class="mail"><i class="fas fa-at"></i> infen00730@gmail.com</div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Pavel Fralou 2018
+        </footer>
+    </div>
 </body>
+
 </html>

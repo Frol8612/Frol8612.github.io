@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <div id="page-preloader" class="page-preloader">
+        <div class="pulse"></div>
+    </div>
+
+    <div class="game-container">
+        
+        <div class="name-container">
+            <label for="name-gamer">Имя:</label>
+            <input type="text" id="name-gamer" placeholder="Введите Ваше Имя">
+            <span class="error-name hide">Введите Ваше Имя!!!</span>
+        </div>
+        <button id="btn-start-duel" class="btn-start-duel  btn-start">Начать Дуэль</button>
+        <button id="btn-leaderboard" class="btn-leaderboard btn-start">Таблица Лидеров</button>
+        <button id="btn-back" class="btn-back btn-start"><a href="index.html">Назад</a></button>
+        <button id="btn-attack" class="btn-attack btn-start hide">Бой</button>
+        <button id="btn-close" class="btn-close hide">X</button> 
+
+        <div class="canvas-wrapper hide">
+            <div class="versus"></div>
+            <div class="animation-health hide"></div>
+            <div class="progress-bar">
+                <div class="hero-container container-pro">
+                    <div class="name-pers" id="name-hero">1</div>
+                    <div class="progress">
+                        <div id="prog-hero"></div>
+                        <span id="hero-num">100%</span>
+                    </div>
+                </div>
+                <div class="evil-container container-pro">
+                    <div class="name-pers" id="name-evil">2</div>
+                    <div class="progress prog2">
+                        <div id="prog-evil"></div>
+                        <span id="evil-num">100%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="win">
+                Победы:
+                <span id="win">0</span>
+            </div>
+
+            <div class="timer">60</div>
+
+            <div class="magic-container scale">
+                <button class="btn-fire"></button>
+                <button class="btn-air"></button>
+                <button class="btn-water"></button>
+                <button class="btn-earth"></button>
+            </div>
+
+            <span class="modal m-win hide">You win</span>
+            <span class="modal m-game-over hide">Game Over</span>
+
+            <canvas id="canvas" width="1104" height="621" class="can-bg"></canvas>
+            <canvas id="canvas2" width="1104" height="621" class="can-pers"></canvas>
+        </div>
+        <div class="task-math task-wrapper hide">
+            <span id="task" class="task">??????</span>
+            <div class="answer-container">
+                <label for="answer-number">Введите число: </label>
+                <input type="number" id="answer-number" placeholder="?">
+                <button class="btn-number" id="btn-number">Ответ</button>
+            </div>
+
+            <p>* При делении необходимо округлить до 2-го знака, если после округленния остается 0 то его не нужно указывать</p>
+        </div>
+        <div class="task-translate task-wrapper hide">
+            <p>Напишите перевод слова:</p>
+            <span id="word" class="word">???</span>
+
+            <div class="translate-container">
+                <input type="text" name="text" id="answer-translate">
+                <button id="btn-translate" class="btn-translate">Перевод</button>
+            </div>
+        </div>
+        <div class="task-swap task-wrapper hide">
+            <ul id="sort">
+
+            </ul>
+            <button class="btn-swap" id="btn-swap">Ответ</button>
+        </div>
+        <div class="task-voice task-wrapper hide">
+            <label for="txt-voice">Запишите услышенное слово:</label>
+            <div class="voice-container">
+                <input type="text" name="text" id="txt-voice">
+                <button id="btn-voice" class="btn-voice"></button>
+            </div>
+            <button id="btn-answer-voice">Ответ</button>
+        </div>
+    </div>
+    <div class="total-result scaleY">
+
+        <h2>Итоговая таблица:</h2>
+        <ul class="total-table">
+
+        </ul>
+        <p class="p">*Для выхода нажмите Esc</p>
+    </div>
+
+    <script src="dist/main.js"></script>
+</body>
+
+</html>
