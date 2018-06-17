@@ -133,19 +133,19 @@ ol, ul {
 
 @font-face {
   font-family: YatraOne;
-  src: url("/app/fonts/YatraOne-Regular.woff"); }
+  src: url("../app/fonts/YatraOne-Regular.woff"); }
 
 @font-face {
   font-family: Philosopher;
-  src: url("/app/fonts/Philosopher-Regular.woff"); }
+  src: url("../app/fonts/Philosopher-Regular.woff"); }
 
 @font-face {
   font-family: PoiretOne;
-  src: url("/app/fonts/PoiretOne-Regular.woff"); }
+  src: url("../app/fonts/PoiretOne-Regular.woff"); }
 
 @font-face {
   font-family: Vollkorn;
-  src: url("/app/fonts/Vollkorn-Regular.woff"); }
+  src: url("../app/fonts/Vollkorn-Regular.woff"); }
 
 .page-preloader {
   position: fixed;
@@ -243,7 +243,7 @@ body {
   max-width: 1600px;
   position: relative;
   margin: 0 auto;
-  background: url("/app/images/new_year_background.png"); }
+  background: url("../app/images/new_year_background.png"); }
 
 .wrapper {
   color: cyan; }
@@ -345,7 +345,7 @@ body {
         .wrapper main h3 {
           font-size: 1.5em; } }
     .wrapper main .main-head {
-      background: url("/app/images/header.png") bottom center no-repeat;
+      background: url("../app/images/header.png") bottom center no-repeat;
       background-size: 100%;
       padding: 15% 0; }
       @media (max-width: 600px) {
@@ -405,7 +405,7 @@ body {
             .wrapper main .main-rules .rule-item p {
               font-size: 0.85em; } }
     .wrapper main .main-screenshot {
-      background: url("/app/images/dark_embroidery.png");
+      background: url("../app/images/dark_embroidery.png");
       padding: 5% 0 10%; }
       .wrapper main .main-screenshot .img-container {
         width: 80%;
@@ -426,7 +426,7 @@ body {
     .wrapper main .main-play {
       padding: 5% 0 10%;
       color: #000071;
-      background: url("/app/images/polyester_lite.png"); }
+      background: url("../app/images/polyester_lite.png"); }
       .wrapper main .main-play a {
         text-align: center;
         line-height: 140px;
@@ -505,7 +505,9 @@ body {
   z-index: 5; }
 
 .game-container .canvas-wrapper .progress-bar .container-pro .name-pers, .game-container .canvas-wrapper .modal {
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff; }
+  text-shadow: 0 0 5px #fff,
+ 0 0 10px #fff,
+ 0 0 15px #fff; }
 
 .game-container {
   width: 100vw;
@@ -513,7 +515,7 @@ body {
   position: relative;
   flex-direction: column;
   justify-content: center;
-  background: url("/app/images/hexellence.png") repeat;
+  background: url("../app/images/hexellence.png") repeat;
   font-family: YatraOne;
   overflow: hidden;
   user-select: none;
@@ -614,7 +616,7 @@ body {
       left: 510px;
       width: 80px;
       height: 64px;
-      background: url("/app/images/VERSUS-Graphic.png") no-repeat;
+      background: url("../app/images/VERSUS-Graphic.png") no-repeat;
       background-size: contain;
       z-index: 4; }
     .game-container .canvas-wrapper .animation-health {
@@ -623,7 +625,7 @@ body {
       left: 80px;
       width: 250px;
       height: 50px;
-      background: url("/app/images/list.png");
+      background: url("../app/images/list.png");
       background-size: 200px;
       z-index: 20;
       animation: list 2s infinite linear; }
@@ -706,7 +708,7 @@ body {
         margin: 0 100px;
         border-radius: 50%;
         transform: rotate(-45deg);
-        background: url("/app/images/btn.png") no-repeat;
+        background: url("../app/images/btn.png") no-repeat;
         background-size: 165px; }
       .game-container .canvas-wrapper .magic-container .btn-fire {
         background-color: #ff4732;
@@ -854,7 +856,7 @@ body {
       .game-container .task-voice .voice-container .btn-voice {
         width: 50px;
         height: 50px;
-        background: #00ff48 url("/app/images/if_music_repeat_loop_again_circle_arrow_blue_1872768.png") no-repeat;
+        background: #00ff48 url("../app/images/if_music_repeat_loop_again_circle_arrow_blue_1872768.png") no-repeat;
         background-size: contain;
         margin: 0; }
   .game-container .hide {
